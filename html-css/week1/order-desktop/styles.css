@@ -1,4 +1,4 @@
-/* Body Section */
+
 body {
     width: 100vw;
     height: auto;
@@ -9,7 +9,7 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
 }
-/* Header Section */    
+
 header {
     display: flex;
     flex-direction: column;
@@ -51,12 +51,11 @@ header h2 {
     font-size: 16px;
     font-weight: bold;
 }
-/* Main Section */
+
 main {
     width: 100%;
     max-width: 850px;
 }
-/* payment method selection section */
 
 .payment-option-section {
     display: flex;
@@ -120,7 +119,7 @@ main {
     height: auto;
     padding-top: 10px;
 }
-/* Card Information Section */
+
 .card-information {
     display: flex;
     flex-direction: column;
@@ -196,7 +195,7 @@ main {
     gap: 20px;
     padding: 10px
 }
-/* Finish Buying Section */
+
 .finish-buying {
     display: flex;
     justify-content: center;
@@ -227,7 +226,7 @@ main {
     transition: all .5s ease;
     background: linear-gradient(92.74deg, #FE4E9B 1.15%, #da6f3e 98.48%);
 }
-/* Footer Section */
+
 footer {
     display: flex;
     flex-direction: column;

@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <title>Order Form</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Order Desktop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Header Portion with Order/Payment Details-->
+<body>  
 <header>
         <h2>Order Summary</h2>
         <div class="total-order-details">
@@ -22,10 +21,8 @@
                 <p>$100</p>
             </div>
         </div>
-</header>
-    <!-- Main Portion with Payment Method and Card Information-->
-<main>
-    <!-- Section for Payment Options -->
+</header>   
+<main> 
     <section class="payment-method-section">
         <h2>Payment Method</h2>
         <div class="payment-method-buttons">
@@ -39,7 +36,6 @@
             </button>
         </div>
     </section>
-    <!-- Section for Card / Paypal Information -->
     <section class="card-information">
         <h2>Card Info</h2>
         <form class="card-information-form" method="post">
@@ -50,7 +46,7 @@
             <div class="card-information-form-bottom">
                 <div class="card-information-form-bottom-left">
                     <label for="expiry-date">Expiry Date</label>
-                    <input type="date" id="expiry-date" name="expiry-date" autocomplete= placeholder="MM/YY" required />
+                    <input type="text" id="expiry-date" name="expiry-date" autocomplete="" placeholder="MM/YY" required />
                 </div>
                 <div class="card-information-form-bottom-right">
                     <label for="cvv">CVV</label>
@@ -58,13 +54,10 @@
                 </div>
             </div>
         </form>
-
     </section>
-    <!-- Section for Finishing Buying -->
-    <section class="finish-buying">
+        <section class="finish-buying">
         <button class="buy-now" type="submit" value="Buy-now">Buy Now</button>
     </section>
-    <!-- Section for Footer -->
 <footer>
     <p>Need Help?</p>
 </footer>
