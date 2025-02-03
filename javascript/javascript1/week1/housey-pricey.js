@@ -8,7 +8,7 @@ let calcultaedHouseCost = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 console.log("The actual house price offered to Peter is " + actualHouseCost + ".");
 console.log("Our system calculates that Peter should pay no more than " + calcultaedHouseCost + " for this house.");
 console.log("SYSTEMS SUGGESTION");
-if (actualHouseCost < calcultaedHouseCost) {
+if (actualHouseCost > calcultaedHouseCost) {
     console.info("Hi Peter, offered price of the house is more than our system's calculated price so we dont reccommend you to buy it.");
 }
 else {
@@ -26,7 +26,7 @@ calcultaedHouseCost = volumeInMeters * 2.5 * 1000 + gardenSizeInM2 * 300;
 console.log("The actual house price offered to Julia is " + actualHouseCost + ".");
 console.log("Our system calculates that Julia should pay no more than " + calcultaedHouseCost + " for this house.");
 console.log("SYSTEMS SUGGESTION");
-if (actualHouseCost < calcultaedHouseCost) {
+if (actualHouseCost > calcultaedHouseCost) {
     console.info("Hi Julia, offered price of the house is more than our system's calculated price so we dont reccommend you to buy it.");
 }
 else {
