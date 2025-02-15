@@ -9,6 +9,6 @@ function getEventWeekday(daysFromToday) {
     return weekDay[eventDay];
 }
 
-console.log('\n' + getEventWeekday(9));
-console.log('\n' + getEventWeekday(2));
+console.log(getEventWeekday(9));
+console.log(getEventWeekday(2));
 
