@@ -2,15 +2,6 @@ console.log("\n*********** Smart Phone Activity Log ****************");
 const activities = [];
 const todayDate = getTodayDate();
 
-addActivity(todayDate, "LinkedIn", 50);
-addActivity(todayDate, "Google,", 5);
-addActivity(todayDate, "facebook", 25);
-addActivity(todayDate, "instagram", 36);
-addActivity(todayDate, "whatsapp", 1);
-showActivities();
-showStatus();
-mostTimeSpentOn();
-
 function getTodayDate() {
   const currentDate = new Date();
   const date = [
@@ -25,11 +16,7 @@ function getTodayDate() {
 }
 
 function addActivity(date, activity, duration) {
-  activities.push({
-    date: date,
-    activity: activity,
-    duration: duration,
-  });
+  activities.push({ date, activity, duration });
 }
 
 function showActivities() {
@@ -77,7 +64,7 @@ function minutesToHoursConverter(time) {
 }
 
 function mostTimeSpentOn() {
-  let arrayOfDuration = [];
+  const arrayOfDuration = [];
   for (let i of activities) {
     arrayOfDuration.push(i.duration);
   }
@@ -90,3 +77,12 @@ function mostTimeSpentOn() {
     }
   }
 }
+
+addActivity(todayDate, "LinkedIn", 50);
+addActivity(todayDate, "Google,", 5);
+addActivity(todayDate, "facebook", 25);
+addActivity(todayDate, "instagram", 36);
+addActivity(todayDate, "whatsapp", 1);
+showActivities();
+showStatus();
+mostTimeSpentOn();
