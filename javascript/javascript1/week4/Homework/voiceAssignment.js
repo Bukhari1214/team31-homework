@@ -25,8 +25,8 @@ const getReply = (command) => {
     console.log("ERROR! Command can not hold only numbers");
     return;
   }
-  const commandLowerCased = command.toLowerCase(); // Just to check conditions
-  if (command === "What is your name?") {
+  const commandLowerCased = command.toLowerCase().trim(); // Just to check conditions
+  if (commandLowerCased === "What is your name?".toLocaleLowerCase()) {
     console.log(
       "I am VOICE ASSISTANT. βeta Version. I need more improvements to answer your maximum questions."
     );
@@ -92,11 +92,17 @@ const getReply = (command) => {
     const formattedDate = `${day}. of ${month} ${year}`;
     console.log(formattedDate);
   } else if (commandLowerCased.match(/[+\-*/]/)) {
-    const task = command.split(" ");
+    const task = commandLowerCased.split(" ");
     const filteredTask = task.filter((item) => /[0-9+\-*/]/.test(item));
     const toSolve = filteredTask.join("");
-    const result = eval(toSolve);
-    console.log(result); // Took Help from many Sources for this task
+    try {
+      const result = eval(toSolve);
+      console.log(result);
+    } catch (error) {
+      console.log("Invalid");
+    }
+
+    // Took Help from many Sources for this task
   } else if (commandLowerCased.includes("timer")) {
     const minutesFound = commandLowerCased.match(/(\d+)\s*(minutes?|min|m)/);
     const secondsFound = commandLowerCased.match(/(\d+)\s*(seconds?|sec|s)/);
