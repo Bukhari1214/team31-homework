@@ -1,0 +1,49 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fbfd;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-left: 20px;
+}
+#productListContainer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 3px;
+  background: linear-gradient(45deg, blue 20%, white 60%, blue 80%);
+  padding: 10px;
+  margin: 30px;
+}
+
+.product {
+  background: linear-gradient(135deg, blue 20%, white 60%, blue 80%);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product h3,
+.product p {
+  color: black;
+  margin: 5px 0;
+}
+
+.product p {
+  font-size: 14px;
+}
