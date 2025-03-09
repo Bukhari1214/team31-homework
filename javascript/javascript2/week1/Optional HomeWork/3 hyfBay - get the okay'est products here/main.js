@@ -1,12 +1,9 @@
-console.log("Script loaded");
-
 const products = getAvailableProducts();
-console.log(products);
 function renderProducts(products) {
   const body = document.body;
 
   const container = document.createElement("div");
-  container.setAttribute("id", "productListContainer");
+  container.setAttribute("class", "productListContainer");
   body.appendChild(container);
 
   products.forEach((product) => {

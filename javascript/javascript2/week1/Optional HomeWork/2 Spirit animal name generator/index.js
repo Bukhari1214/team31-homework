@@ -13,6 +13,7 @@ const spiritAnimals = [
 const inputDiv = document.getElementById("inputContainer");
 const nameInput = document.getElementById("name");
 const spiritAnimalElement = document.getElementById("spiritAnimal");
+const mainDiv = document.querySelector(".main-div");
 
 function findSpiritAnimal() {
   const name = nameInput.value;
@@ -28,7 +29,7 @@ function findSpiritAnimal() {
 const messageForUser = document.createElement("p");
 messageForUser.innerText =
   "Please Select Which Way You Want To Create Spirit Animal Name";
-document.body.appendChild(messageForUser);
+mainDiv.appendChild(messageForUser);
 
 const radioContainer = document.createElement("div");
 radioContainer.setAttribute("id", "radioContainer");
@@ -59,20 +60,17 @@ radioContainer.appendChild(document.createElement("br"));
 radioContainer.appendChild(radio2);
 radioContainer.appendChild(label2);
 
-document.body.appendChild(radioContainer);
-let currentAction;
-radio1.addEventListener("change", function () {
-  if (radio1.checked) {
-    currentAction = "click";
-    handleAction(currentAction);
-  }
-});
+mainDiv.appendChild(radioContainer);
 
-radio2.addEventListener("change", function () {
-  if (radio2.checked) {
-    currentAction = "mouseover";
-    handleAction(currentAction);
-  }
+let currentAction = document.querySelectorAll('input[name="action"]');
+
+currentAction.forEach((radio) => {
+  radio.addEventListener("change", function () {
+    if (radio.checked) {
+      const actionToTake = radio.value;
+      handleAction(actionToTake);
+    }
+  });
 });
 
 function handleAction(action) {

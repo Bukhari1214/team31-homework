@@ -1,4 +1,4 @@
-body {
+.main-div {
   max-width: 700px;
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -6,8 +6,9 @@ body {
   color: lightsalmon;
 }
 
-#spiritAnimal {
-  margin-top: auto;
-  font-size: 24px;
+.spiritAnimal {
+  margin-top: 15;
+  font-size: 14px;
   font-weight: bold;
+  color: orangered;
 }

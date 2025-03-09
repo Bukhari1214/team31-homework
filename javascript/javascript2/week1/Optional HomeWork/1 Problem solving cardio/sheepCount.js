@@ -1,4 +1,4 @@
-let sheeps = [
+const sheeps = [
   true,
   true,
   true,
