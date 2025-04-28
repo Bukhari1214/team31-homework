@@ -1,4 +1,4 @@
--- Active: 1744540265126@@127.0.0.1@3306@hyf_lesson1
+-- Active: 1745267309573@@127.0.0.1@3306@hyf_lesson1
 
 -- View the full status table for help with the assignment tasks
 SELECT * FROM status;
