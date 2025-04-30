@@ -16,7 +16,8 @@ WHERE due_date IS NULL;
 
 --Assignment Task No 03: Find all the tasks that are marked as done 
 SELECT * FROM task
-WHERE status_id = 3;
+JOIN status ON status.id = task.status_id
+WHERE status.name = 'done';
 
 --Assignment Task No 04: Find all the tasks that are not marked as done
 SELECT * FROM task WHERE status_id != 3 ;
