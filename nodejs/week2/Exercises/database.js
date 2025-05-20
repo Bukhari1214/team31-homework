@@ -1,7 +1,10 @@
-import dotenv from "dotenv";
 import knex from "knex";
+import dotenv from "dotenv";
+
+// Load environment variables from .env file
 
 dotenv.config();
+
 const knexInstance = knex({
   client: "mysql2",
   connection: {

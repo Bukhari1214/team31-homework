@@ -67,3 +67,6 @@ router.post("/snippets", async (req, res) => {
 });
 
 export default router;
+
+// I am missing last portion of EXERCISE SECTION WEEK 2. (06 Auth.md)
+// I will try to finish it before next sunday session.

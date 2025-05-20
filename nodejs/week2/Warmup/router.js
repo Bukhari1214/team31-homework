@@ -20,7 +20,7 @@ router.get("/", (req, res) => {
     );
 });
 
-// This Route Will Show All Documents
+// This Route Will Show All Documents in documents.json
 router.get("/search", async (req, res) => {
   const { q } = req.query;
 

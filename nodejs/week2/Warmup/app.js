@@ -16,5 +16,5 @@ try {
     console.log("Server started successfully on port", port);
   });
 } catch (err) {
-  console.error("Error finding available port:", err);
+  console.error("ERROR: No Port Available:", err);
 }

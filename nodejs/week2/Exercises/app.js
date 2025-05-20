@@ -10,4 +10,7 @@ app.use("/api", router);
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
+  console.log(`http://localhost:${port}/api`);
+  console.log(`http://localhost:${port}/api/snippets` + `For GET and POST`);
+  console.log(`http://localhost:${port}/api/snippets/:id`);
 });

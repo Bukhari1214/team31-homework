@@ -1,5 +1,5 @@
 {
-  "name": "exercises",
+  "name": "exercises_week2",
   "version": "1.0.0",
   "type": "module",
   "main": "app.js",
@@ -8,9 +8,9 @@
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "WASIM",
   "license": "ISC",
-  "description": "",
+  "description": "FOR WEEK 2 EXERCISES",
   "dependencies": {
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
