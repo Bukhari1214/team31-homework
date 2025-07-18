@@ -1,6 +1,10 @@
 Tomato
 Carrot
+<<<<<<< HEAD
 Sweet Potato
+=======
+Sweet and Normal Potato
+>>>>>>> Git-Week2-Wasim
 Eggplant
 Spinatch
 Broccoli
