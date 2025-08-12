@@ -3,3 +3,5 @@ Carrot
 Sweet and Normal Potato
 Eggplant
 Spinatch
+Broccoli
+Cucumber
